@@ -72,7 +72,8 @@ const startServer = async () => {
     await seedUsers();
     await recalculateAllAccountBalances();
     console.log("Account balances recalculated from transactions");
-    app.listen(process.env.PORT, () => console.log("Server running on port", process.env.PORT));
+    const PORT = process.env.PORT || 5001;
+    app.listen(PORT, () => console.log("Server running on port", PORT));
   } catch (err) {
     console.error("Server failed:", err);
   }
