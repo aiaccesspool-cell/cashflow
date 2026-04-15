@@ -1,0 +1,36 @@
+:root {
+  --app-background: #f4f7fb;
+  --app-surface: #ffffff;
+  --app-text: #22324d;
+  --app-text-muted: #6d7b99;
+  --app-border: rgba(109, 123, 153, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI Variable Display", "Segoe UI", "Trebuchet MS", sans-serif;
+  color: var(--app-text);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(244, 247, 251, 0.98)),
+    var(--app-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+}
+
+code {
+  font-family: "Cascadia Code", "Consolas", "Courier New", monospace;
+}
